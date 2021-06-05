@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand">My Notes</a>
+            <form class="d-flex">
+                <input class="form-control me-2" id="searchBar" type="search" placeholder="Search" aria-label="Search">
+
+            </form>
+        </div>
+    </nav>
+
+    <div class="container my-3">
+        <h2>Ready To Write Notes</h2>
+
+        <div class="card" style="border: 1px solid black;">
+
+            <div class="card-body">
+                <h5 class="card-title">Add Notes</h5>
+
+                <div class="form-floating">
+                    <textarea class="form-control " id="addTitle" placeholder="Leave a comment here"
+                        id="floatingTextarea2" style="height: 10px ;border:1px solid black;"></textarea>
+                    <label for="floatingTextarea2">Title...</label>
+                </div>
+                <br>
+                <div class="form-floating">
+                    <textarea class="form-control " id="addText" placeholder="Leave a comment here"
+                        id="floatingTextarea2" style="height: 100px ;border:1px solid black;"></textarea>
+                    <label for="floatingTextarea2">Write here...</label>
+                </div>
+                <br>
+                <div>
+                    <input type="checkbox" id="fav" style="font-weight: bold;"> Mark as Important </input>
+                </div>
+
+
+                <div>
+                    <input type="checkbox" id="checkedLink" style="font-weight: bold;"> Click to add link </input>
+                </div>
+
+                <button class="btn btn-primary my-3 " id="addButton">Add a note</button>
+            </div>
+        </div>
+
+        <h2 class="my-2">Notes </h2>
+        <hr>
+        <div class=" row container-fluid " id="notesDiv">
+
+        </div>
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
