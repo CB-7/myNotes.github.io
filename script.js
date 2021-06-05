@@ -179,7 +179,7 @@ function deleteNote(index) {
 // function to visit a link
 function visit(text) {
     let addr = `${text}`;
-    location.href = addr;
+    window.open(addr);
 }
 
 
